@@ -1,0 +1,14 @@
+{
+    "name": "easy-js",
+    "author": {
+        "name": "Mike Lehan",
+        "url": "https://github.com/M1ke"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "LICENSE"
+        }
+    ],
+    "description": "Simple JS utilities"
+}
