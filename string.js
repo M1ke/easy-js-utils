@@ -3,11 +3,19 @@ if (!String.shorten){
 		return this.substr(0,length);
 	};
 }
-window.plural=function(string,num){
+
+if (!String.permalink){
+	String.prototype.permalink=function(){
+		return this.replace(/[ &.]+/g,'-').replace(/'/g,'').toLowerCase();
+	}
+}
+
+function plural(string,num){
 	string=num+' '+string+(num!=1 ? 's' : '');
 	return string;
-};
-window.sqlDate=function(){
+}
+
+function sqlDate(){
 	d=new Date();
 	month=d.getMonth();
 	month++;
@@ -16,4 +24,4 @@ window.sqlDate=function(){
 	}
 	d=d.getFullYear()+'-'+month+'-'+d.getDate()+' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds();
 	return d;
-};
+}
