@@ -1,3 +1,4 @@
+// From http://stackoverflow.com/a/5997959/518703
 function findUrls(text){
     var source = (text || '').toString()
     	,urlArray = []
