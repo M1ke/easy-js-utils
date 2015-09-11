@@ -11,6 +11,7 @@ var numberSeries = function(series){
 	}
 
 	series.map(function(val){
+		val *= 1;
 		if (arr.length==0){
 			arr.push(val);
 		}
