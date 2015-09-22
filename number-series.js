@@ -10,6 +10,10 @@ var numberSeries = function(series){
 		}
 	}
 
+	if (typeof series!='object' || series.length<1){
+		return '';
+	}
+
 	series.map(function(val){
 		val *= 1;
 		if (arr.length==0){
