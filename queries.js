@@ -1,12 +1,12 @@
 if (!window.appendQuery){
-	appendQuery=function(url,append){
+	var appendQuery = function(url,append){
 		url+=(url.indexOf('?')>0 ? '&' : '?')+append;
 		return url;
 	};
 }
-$.fn.appendQuery=function(append){
+$.fn.appendQuery = function(append){
 	this.each(function(){
-		$(this).attr('href',appendQuery($(this).attr('href'),append));
+		$(this).attr('href', appendQuery($(this).attr('href'), append));
 	});
 	return this;
 };

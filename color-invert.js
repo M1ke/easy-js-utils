@@ -1,4 +1,4 @@
-window.colorInvert=function(color){
+var colorInvert = function(color){
 	var invColor={};
 	if (color.substr(0,1)=='#'){
 		color={r:color.substr(1,2),g:color.substr(3,2),b:color.substr(5,2)};
