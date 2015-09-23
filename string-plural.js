@@ -1,5 +1,5 @@
 if (!String.plural){
-	String.prototype.plural = function(num){
-		return num+' '+string+(num!=1 ? 's' : '');;
+	String.prototype.plural = Number.prototype.plural = function(word){
+		return this+' '+word+(this!=1 ? 's' : '');
 	}
 }
